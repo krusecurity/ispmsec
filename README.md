@@ -1,5 +1,5 @@
 # **📖 ISRDO Security Package – Developer's Guide**  
-### **A complete guide to integrating `isrdo-security` into new and existing Node.js projects.**  
+### **A complete guide to integrating `ispm` into new and existing Node.js projects.**  
 
 ---
 
@@ -25,12 +25,12 @@ The **ISRDO Security Package** provides security middleware and authentication u
 ```sh
 mkdir my-secure-app && cd my-secure-app
 npm init -y
-npm install isrdo-security express dotenv
+npm install ispm express dotenv
 ```
 
 ### **For Existing Projects**  
 ```sh
-npm install isrdo-security
+npm install ispm
 ```
 
 ---
@@ -40,7 +40,7 @@ npm install isrdo-security
 Modify your `index.js` or `app.js` file:
 ```js
 const express = require("express");
-const isrdoSecurity = require("isrdo-security");
+const isrdoSecurity = require("ispm");
 
 const app = express();
 
@@ -78,7 +78,7 @@ app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 # **🔑 3. Authentication Setup**
 ### **🔹 Using JWT Authentication**
 ```js
-const { generateToken, verifyToken } = require("isrdo-security");
+const { generateToken, verifyToken } = require("ispm");
 
 const user = { id: 1, username: "admin" };
 
@@ -101,8 +101,8 @@ try {
 Modify your authentication routes:
 ```js
 const express = require("express");
-const passport = require("isrdo-security").passport;
-const { setAuthHandlers } = require("isrdo-security").auth;
+const passport = require("ispm").passport;
+const { setAuthHandlers } = require("ispm").auth;
 
 const router = express.Router();
 
@@ -136,7 +136,7 @@ module.exports = router;
 ### **🔹 CSRF Protection**
 Automatically enabled via:
 ```js
-app.use(isrdoSecurity.csrf);
+app.use(ispm.csrf);
 ```
 **For frontend compatibility**, send the CSRF token in requests:
 ```js
@@ -154,7 +154,7 @@ fetch("/api", {
 ### **🔹 Rate Limiting**
 Prevent brute-force attacks:
 ```js
-app.use(isrdoSecurity.rateLimit);
+app.use(ispm.rateLimit);
 ```
 To customize rate limits:
 ```js
@@ -173,7 +173,7 @@ app.use(customLimiter);
 ### **🔹 HTTP Parameter Pollution Protection**
 Prevents duplicate parameters in requests:
 ```js
-app.use(isrdoSecurity.hpp);
+app.use(ispm.hpp);
 ```
 
 ---
@@ -181,7 +181,7 @@ app.use(isrdoSecurity.hpp);
 ### **🔹 Security Headers**
 Set secure HTTP headers:
 ```js
-app.use(isrdoSecurity.helmet);
+app.use(ispm.helmet);
 ```
 
 ---
@@ -190,7 +190,7 @@ app.use(isrdoSecurity.helmet);
 ### **🔹 Winston Logging**
 ISRDO Security provides **built-in logging**:
 ```js
-const logger = require("isrdo-security").logger;
+const logger = require("ispm").logger;
 
 logger.info("Server started successfully");
 logger.error("Error occurred");
@@ -202,7 +202,7 @@ Logs are stored in `logs/error.log`.
 # **🔧 6. Utility Functions**
 ### **🔹 UUID Generator**
 ```js
-const { generateUUID } = require("isrdo-security");
+const { generateUUID } = require("ispm");
 console.log(generateUUID()); // Example: "b15f9c8e-8d2f-4d3e-9886-a1b3c5e6f7d8"
 ```
 
@@ -210,7 +210,7 @@ console.log(generateUUID()); // Example: "b15f9c8e-8d2f-4d3e-9886-a1b3c5e6f7d8"
 
 ### **🔹 Input Validation**
 ```js
-const { validateUserInput } = require("isrdo-security");
+const { validateUserInput } = require("ispm");
 
 const { error } = validateUserInput({ username: "admin", password: "123456" });
 if (error) console.log(error.details[0].message);
@@ -236,7 +236,7 @@ node index.js
 # **📢 8. Updating the Package**
 To upgrade to the latest version:
 ```sh
-npm update isrdo-security
+npm update ispm
 ```
 
 ---
@@ -245,7 +245,7 @@ npm update isrdo-security
 🎉 **Congratulations!** You have successfully integrated the `isrdo-security` package into your project. This package provides a **plug-and-play security solution** for your Node.js applications.
 
 **📌 Next Steps:**
-- **Contribute to ISRDO Security:** Fork & improve it on [GitHub](https://github.com/your-username/isrdo-security).
+- **Contribute to ISRDO Security:** Fork & improve it on [GitHub](https://github.com/krusecurity/ispmsec).
 - **Report Issues:** Open a GitHub issue for bug reports & feature requests.
 - **Spread the Word:** Share with other developers! 🚀
 
@@ -253,5 +253,5 @@ npm update isrdo-security
 
 # **💬 Need Help?**
 📩 **Support Email:** support@isrdo.in  
-🌎 **Website:** [ISRDO Security](https://isrdo.in)  
+🌎 **Website:** [ISRDO](https://isrdo.in)  
 👨‍💻 **Community:** Join our developer forum for discussions!
