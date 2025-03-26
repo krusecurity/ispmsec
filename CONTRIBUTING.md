@@ -13,11 +13,11 @@ We appreciate your interest in contributing to our security package! Please foll
 1. **Fork the Repository** on GitHub.
 2. **Clone your Fork**:
    ```sh
-   git clone https://github.com/your-username/isrdo-security.git
+   git clone https://github.com/krusecurity/ispmsec.git
    ```
 3. **Navigate into the Directory**:
    ```sh
-   cd isrdo-security
+   cd ispmsec
    ```
 4. **Install Dependencies**:
    ```sh
@@ -27,7 +27,7 @@ We appreciate your interest in contributing to our security package! Please foll
 ## 🚀 How to Contribute
 
 ### 📝 1. Reporting Bugs
-- If you find a bug, please [open an issue](https://github.com/isrdo/isrdo-security/issues).
+- If you find a bug, please [open an issue](https://github.com/krusecurity/ispmsec/issues).
 - Provide steps to reproduce, expected behavior, and actual behavior.
 
 ### ⚡ 2. Adding Features or Fixes
