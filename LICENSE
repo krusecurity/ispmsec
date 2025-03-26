@@ -1,0 +1,55 @@
+MIT License  
+
+Version 1.0, March 2025  
+
+Copyright (c) 2025  
+Indian Security Research & Development Organization (ISRDO)  
+All Rights Reserved.  
+
+Permission is hereby granted, free of charge, to any person obtaining a copy  
+of this software and associated documentation files (the "Software"), to deal  
+in the Software without restriction, including without limitation the rights  
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell  
+copies of the Software, and to permit persons to whom the Software is  
+furnished to do so, subject to the following conditions:  
+
+1. **Attribution**:  
+   - The above copyright notice and this permission notice shall be included  
+     in all copies or substantial portions of the Software.  
+   - Any modifications made to the Software must be clearly documented.  
+
+2. **Commercial and Non-Commercial Use**:  
+   - This software may be used for personal, educational, commercial,  
+     and enterprise purposes, provided compliance with all terms of this license.  
+
+3. **Security Compliance**:  
+   - Users are responsible for ensuring that the implementation of this software  
+     does not violate any data protection, cybersecurity, or privacy laws in their jurisdiction.  
+   - ISRDO does not guarantee compliance with industry standards unless otherwise stated.  
+
+4. **Warranty Disclaimer**:  
+   - THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,  
+     INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR  
+     PURPOSE, AND NON-INFRINGEMENT.  
+   - IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES,  
+     OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM,  
+     OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.  
+
+5. **Security Responsibility**:  
+   - The software is designed to enhance security, but its effectiveness depends on  
+     correct implementation and adherence to cybersecurity best practices.  
+   - ISRDO is not responsible for any data breaches, security vulnerabilities,  
+     or damages resulting from improper use of this software.  
+
+6. **Modification and Redistribution**:  
+   - Users are allowed to modify, enhance, and redistribute this software under the same license.  
+   - Any modifications must be documented and made available to the open-source community,  
+     unless they are for private or internal use.  
+
+7. **Revocation Clause**:  
+   - If this software is used for unethical, illegal, or harmful purposes,  
+     ISRDO reserves the right to revoke this license for the violator.  
+
+This license applies to all versions of this software and supersedes any previous agreements.  
+
+For official documentation, support, or contributions, visit [ISRDO](https://isrdo.in).  
